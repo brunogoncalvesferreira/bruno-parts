@@ -10,7 +10,7 @@ export function Cart() {
 
   const navigate = useNavigate()
   return (
-    <div className="max-w-4xl w-90 mx-auto my-8">
+    <div className="max-w-4xl w-90 mx-auto my-20">
       <h1>Esses são seus items</h1>
       <div className="flex flex-col ">
         {DATABASE.map((product) => {

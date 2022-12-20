@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom"
 
 export function Header() {
   return (
-    <header className="bg-black p-1 fixed w-full">
-      <nav className="flex items-center justify-between max-w-4xl w-90 mx-auto my-8">
+    <header className="bg-black p-5 fixed z-30 top-0 left-0 w-full">
+      <nav className="flex items-center justify-between max-w-4xl w-90 mx-auto ">
         <NavLink
           to="/"
           className="text-gray-100 text-xl flex items-center gap-2"

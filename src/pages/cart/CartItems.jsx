@@ -9,7 +9,7 @@ export function CartItem({ id, imageProduct, title, price }) {
     updateCartItemCout,
   } = useContext(ShopContext)
   return (
-    <div className=" flex flex-col items-center gap-4 shadow-2xl w-3/6 m-auto mb-4 p-4 h-auto max-md:w-full">
+    <div className=" flex flex-col items-center gap-4 shadow-2xl w-3/6 m-auto mb-20 p-4 h-auto max-md:w-full">
       <img
         className="w-40 h-40 m-auto  hover:scale-110 duration-300 cursor-pointer"
         src={imageProduct}
