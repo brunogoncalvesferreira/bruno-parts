@@ -10,7 +10,7 @@ export function Cart() {
 
   const navigate = useNavigate()
   return (
-    <div className="max-w-4xl w-90 mx-auto my-20">
+    <div className={"mx-auto my-20 w-90 max-w-4xl"}>
       <h1>Esses são seus items</h1>
       <div className="flex flex-col ">
         {DATABASE.map((product) => {
@@ -36,11 +36,11 @@ export function Cart() {
           <div className="flex gap-8">
             <button
               onClick={() => navigate("/produtos")}
-              className="bg-gray-900 w-40 p-1 hover:bg-gray-700 rounded-md text-gray-300 cursor-pointer"
+              className="w-40 cursor-pointer rounded-md bg-gray-900 p-1 text-gray-300 hover:bg-gray-700"
             >
               Voltar ao Shopping
             </button>
-            <button className="bg-gray-900 w-40 p-1 hover:bg-gray-700  rounded-md text-gray-300 cursor-pointer">
+            <button className="w-40 cursor-pointer rounded-md bg-gray-900  p-1 text-gray-300 hover:bg-gray-700">
               Checkout
             </button>
           </div>

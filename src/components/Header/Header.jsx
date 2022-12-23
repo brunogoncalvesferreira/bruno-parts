@@ -3,19 +3,21 @@ import { NavLink } from "react-router-dom"
 
 export function Header() {
   return (
-    <header className="bg-black p-5 fixed z-30 top-0 left-0 w-full">
-      <nav className="flex items-center justify-between max-w-4xl w-90 mx-auto ">
+    <header className={"fixed top-0 left-0 z-30 w-full bg-black p-5"}>
+      <nav
+        className={"mx-auto flex w-90 max-w-4xl items-center justify-between "}
+      >
         <NavLink
           to="/"
-          className="text-gray-100 text-xl flex items-center gap-2"
+          className={"flex items-center gap-2 text-xl text-gray-100"}
         >
           <Car /> Web.Parts
         </NavLink>
-        <div className="flex items-center gap-1">
-          <NavLink to="/produtos" className="text-gray-100 text-md">
+        <div className={"flex items-center gap-1"}>
+          <NavLink to="/produtos" className={"text-md text-gray-100"}>
             Shop
           </NavLink>
-          <NavLink to="/carrinho" className="hover:scale-110 duration-150">
+          <NavLink to="/carrinho" className={"duration-150 hover:scale-110"}>
             <ShoppingCartSimple size={20} color="#fff" />
           </NavLink>
         </div>

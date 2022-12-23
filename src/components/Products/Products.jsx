@@ -6,17 +6,21 @@ export function Products({ id, imageProduct, title, price }) {
   const { handleAddToCart, cartItems } = useContext(ShopContext)
   const cartItemAmount = cartItems[id]
   return (
-    <div className="flex flex-col gap-2 shadow-2xl p-4 h-auto ">
+    <div className={"flex h-auto flex-col gap-2 p-4 shadow-2xl "}>
       <img
-        className="w-40 h-40 m-auto hover:scale-110 duration-300 cursor-pointer"
+        className={
+          "m-auto h-40 w-40 cursor-pointer duration-300 hover:scale-110"
+        }
         src={imageProduct}
         alt={title}
       />
-      <strong className="text-sm m-auto text-center">{title}</strong>
-      <p className="m-auto">R$ {price.toFixed(2)}</p>
+      <strong className={"m-auto text-center text-sm"}>{title}</strong>
+      <p className={"m-auto"}>R$ {price.toFixed(2)}</p>
       <button
         onClick={() => handleAddToCart(id)}
-        className="flex items-center justify-center gap-2 w-40 h-10 bg-cyan-600 hover:bg-cyan-500 hover:text-gray-100 duration-300 rounded-md border-none text-sm  m-auto "
+        className={
+          "m-auto flex h-10 w-40 items-center justify-center gap-2 rounded-md border-none bg-cyan-600 text-sm duration-300 hover:bg-cyan-500  hover:text-gray-100 "
+        }
       >
         Adicionar <ShoppingCart />
         {cartItemAmount > 0 && <>({cartItemAmount})</>}
